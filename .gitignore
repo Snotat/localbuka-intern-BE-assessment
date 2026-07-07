@@ -1,3 +1,4 @@
-noode_module/ 
-node_module 
-node_modules/ 
+**/node_modules
+dist/
+**/**/*.log
+tsconfig.tsbuildinfo
