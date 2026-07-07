@@ -1,9 +1,8 @@
-
 node_modules/
 dist/
 build/
 coverage/
-.env
 .vscode/
+.env
 *.log
 *.tsbuildinfo

@@ -9,7 +9,10 @@ import { RouteError } from '@src/common/utils/route-errors';
 import BaseRouter from '@src/routes/apiRouter';
 
 import EnvVars, { NodeEnvs } from './common/constants/env';
-
+import { errorHandler } from "./middleware/errorHandler";
+import pointsRoutes from './routes/points.routes';
+import restaurantRoutes from "./routes/restaurant.routes";
+import reviewRoutes from './routes/review.routes';
 /******************************************************************************
                                 Setup
 ******************************************************************************/
@@ -60,6 +63,11 @@ app.use(express.static(staticDir));
 app.get('/', (_: Request, res: Response) => {
   return res.redirect('/users');
 });
+
+app.use("/restaurants", restaurantRoutes);
+app.use("/review", reviewRoutes);
+app.use("/points", pointsRoutes);
+app.use(errorHandler)
 
 // Redirect to login if not logged in.
 app.get('/users', (_: Request, res: Response) => {
