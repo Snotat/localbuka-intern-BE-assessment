@@ -1,8 +1,5 @@
+import { earnPoints, getBalance } from "@src/services/points.services";
 import { Router } from "express";
-import {
-  earnPoints,
-  getBalance,
-} from "../controller/points.controller";
 
 const router = Router();
 

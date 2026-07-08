@@ -1,3 +1,39 @@
+efore running the project, ensure you have the following installed:
+
+Node.js (v18 or later recommended)
+npm
+Installation
+Clone the repository:
+git clone https://github.com/Snotat/localbuka-intern-BE-assessment.git
+Navigate into the project directory:
+cd localbuka-BE-intern-assessment
+Install dependencies:
+npm install
+Running the Application
+Development
+npm run dev
+Production
+
+Compile the project:
+
+npm run build
+
+Then start the server:
+
+npm start
+
+The API will be available at:
+
+http://localhost:5000
+
+ENDPOINTS
+
+GET	/restaurants	Retrieve all restaurants with optional search and geolocation sorting
+GET	/restaurants/:id	Retrieve a single restaurant together with its reviews
+POST	/restaurants/:id/reviews	Submit a review for a restaurant
+POST	/points/earn	Earn points for a check-in or review
+GET	/points/balance/:userId	Retrieve a user's total points and points ledger
+
 ## About
 
 This project was created with [express-generator-typescript](https://github.com/seanpmaxwell/express-generator-typescript).
