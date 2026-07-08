@@ -1,4 +1,4 @@
-efore running the project, ensure you have the following installed:
+  Before running the project, ensure you have the following installed:
 
 Node.js (v18 or later recommended)
 npm
